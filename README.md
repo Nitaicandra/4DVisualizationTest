@@ -2,7 +2,7 @@
 
 
 
-This is a standard cube, Notice how the back most face is farther to the right than the front most face when the cube moves left due to the perspective projection
+This is a standard cube, notice how the back most face is farther to the right than the front most face when the cube moves left due to the perspective projection
 
 ![ezgif com-gif-maker-1](https://user-images.githubusercontent.com/89361982/139005143-31a2f04d-13e6-4420-839f-df152ec4d74f.gif)
 
@@ -11,7 +11,7 @@ This is a Stereographic projection of a Tesseract, one of the standard ways to v
 
 
 
-This is the same cube, Notice how the inner cube does not move relative to the outer cube like you would expect following the logic of the perspective projection
+This is the same cube, notice how the inner cube does not move relative to the outer cube like you would expect following the logic of the perspective projection
 
 ![ezgif com-gif-maker-4](https://user-images.githubusercontent.com/89361982/139004725-e4ff6b14-746a-4a1a-9a19-24a3060e2921.gif)
 
