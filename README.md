@@ -2,7 +2,7 @@
 
 
 
-Standard cube, Notice how the back most face is farther to the right than the front most face due to the perspective projection
+Standard cube, Notice how the back most face is farther to the right than the front most face when the cube moves left  due to the perspective projection
 ![ezgif com-gif-maker-1](https://user-images.githubusercontent.com/89361982/139005143-31a2f04d-13e6-4420-839f-df152ec4d74f.gif)
 
 Stereographic projection of Tesseract, This is one of the standard ways to visualize a 4D Cube
@@ -10,9 +10,7 @@ Stereographic projection of Tesseract, This is one of the standard ways to visua
 
 
 
-
-
-Stereographic Tesseract, Notice how the inner cube does not move relative to the outer cube
+Stereographic Tesseract, Notice how the inner cube does not move relative to the outer cube like you would expect following the logic of the perspective projection
 ![ezgif com-gif-maker-4](https://user-images.githubusercontent.com/89361982/139004725-e4ff6b14-746a-4a1a-9a19-24a3060e2921.gif)
 
 Artistic represention of how a perspective projection of a 4d cube would look like
