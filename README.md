@@ -2,12 +2,12 @@
 
 
 
-Standard cube, 
-![ezgif com-gif-maker-2](https://user-images.githubusercontent.com/89361982/139004239-6518367a-25e7-44e8-b803-f297530eec62.mp4)
-Notice how the back most face goes outside of the bound of the front most face due to the perspective projection
+Standard cube, Notice how the back most face goes outside of the bound of the front most face due to the perspective projection
+![ezgif com-gif-maker-1](https://user-images.githubusercontent.com/89361982/139005143-31a2f04d-13e6-4420-839f-df152ec4d74f.gif)
 
 Stereographic projection of Tesseract, This is one of the standard ways to visualize a 4D Cube
-![ezgif com-gif-maker-1](https://user-images.githubusercontent.com/89361982/139004940-8546573b-435d-48f8-af7b-fb85fd99f8d0.mp4)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/89361982/139005135-2bb1e8b6-7517-4c36-87f6-61439cf98b9a.gif)
+
 
 
 
