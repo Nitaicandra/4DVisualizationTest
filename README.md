@@ -16,5 +16,6 @@ Stereographic Tesseract, Notice how the inner cube does not move relative to the
 ![ezgif com-gif-maker-4](https://user-images.githubusercontent.com/89361982/139004725-e4ff6b14-746a-4a1a-9a19-24a3060e2921.gif)
 
 Artistic represention of how a perspective projection of a 4d cube would look like
-![ezgif com-gif-maker-3](https://user-images.githubusercontent.com/89361982/139004790-de6ebdeb-1e48-4295-b5b4-85b278def02d.gif)
 ![ezgif com-gif-maker-2](https://user-images.githubusercontent.com/89361982/139004896-db6e215a-4a9e-4301-8295-21a8de6d9f57.gif)
+![ezgif com-gif-maker-3](https://user-images.githubusercontent.com/89361982/139004790-de6ebdeb-1e48-4295-b5b4-85b278def02d.gif)
+
