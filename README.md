@@ -11,7 +11,7 @@ This is a Stereographic projection of a Tesseract, one of the standard ways to v
 
 
 
-This is the same cube, notice how the inner cube does not move relative to the outer cube like you would expect following the logic of the perspective projection
+This is the same cube, notice how the inner cube does not move relative to the outer cube like you would expect following the logic of the perspective projection shown in the first image
 
 ![ezgif com-gif-maker-4](https://user-images.githubusercontent.com/89361982/139004725-e4ff6b14-746a-4a1a-9a19-24a3060e2921.gif)
 
