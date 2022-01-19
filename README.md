@@ -4,6 +4,7 @@ There are currently 2 main ways to visualize 4d objects, Stereographic projectio
 Stereographic projections work by scaling the points of a 4d object based on the distance to some other point in space,  it can be thought of as taking a 3 dimensional shadow of 4d object.
 ![image](https://user-images.githubusercontent.com/89361982/147189608-e3ef338c-004e-4880-b800-cf42340b30d8.png)
 ![1p8 2021_12_23_(😦)(477)](https://user-images.githubusercontent.com/89361982/147190919-2c27579d-d29b-4b72-bc1c-fedfd3015c9c.png)
+
 mathematically this model is equivlent to dividing all vertices on the cube by the distance of an arbitrary point.
 
 The second Method works like an MRI Scan but instead of taking 2d slices of a 3d object it takes 3d slices of a 4d object
