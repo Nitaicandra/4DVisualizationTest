@@ -15,7 +15,7 @@ This project will discribe a new method for 4d projection
 |---|
 however the problem with this is that although you can visualize 4d rotations of the objects, you cant visualize 4d rotations of the camera because the camera is not defined in 4d space only the light source and objects are.
 In addition to that it doesnt perserve the rules of perspective. For example here is a stereographic projection of a normal cube.
-![JKIsabellinewheatear20_01_2022](https://user-images.githubusercontent.com/89361982/150290413-5ab6dd46-feab-455a-8a00-178f1476cbbf.gif)
+![OAAbalone20_01_2022](https://user-images.githubusercontent.com/89361982/150433470-b8e96a98-89b0-4b82-b9ba-3bac3284ff88.gif)
 And this is a perspective projection of that same cube, notice how when the cube moves left the back most face of the cube is farther to the right than the front most face. 
 ![ezgif com-gif-maker-1](https://user-images.githubusercontent.com/89361982/139005143-31a2f04d-13e6-4420-839f-df152ec4d74f.gif)
 This is a stereographic projection of a tesseract, if it followed perspective then you would expect when the tesseract move left then the inner cube would be  displace towards the right like the normal cube
