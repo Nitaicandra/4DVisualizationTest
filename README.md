@@ -6,27 +6,38 @@ Stereographic projections work by scaling the points of a 4d object based on the
 ![image](https://user-images.githubusercontent.com/89361982/147189608-e3ef338c-004e-4880-b800-cf42340b30d8.png)
 ![1p8 2021_12_23_(😦)(477)](https://user-images.githubusercontent.com/89361982/147190919-2c27579d-d29b-4b72-bc1c-fedfd3015c9c.png)
 
-mathematically this model is equivlent to dividing all vertices on the cube by the distance of an arbitrary point.
+mathematically this model is equivlent to dividing all local vertices on the cube by the distance of an arbitrary point. causing vertices farther from the light source to shrink closer to the origin.
 
 The second Method works like an MRI Scan but instead of taking 2d slices of a 3d object it takes 3d slices of a 4d object
 ![image](https://user-images.githubusercontent.com/89361982/147191103-54e314b7-4e03-4643-8b21-02ac2b573f0b.png)
+![JDBernesemountaindog20_01_2022](https://user-images.githubusercontent.com/89361982/150278859-4b7917ff-b038-44d6-b2fe-bf8a39960c75.gif)
+
 Source: 4d Toys
 
 <details>
-<summary>the main issue with both of these projections is that they do not provide a satisfiying way to navigate a 4d environment.</summary>
+<summary>the main issue with both of these projections is that they do not provide a satisfiying way to navigate a 4d environment as neither of them can give sense of "depth" within a scene.</summary>
   - cross section does not allow you to see anything past your 3d plane
   - stereo graphic independent of camera and therfore does not give any information
 </details>
 
 I believe that the solution to this is to define a 4d camera in space with a custom projection matrix that works on 2 axis instead of just one . 
-the way this projection matrix would work is that first all objects would be projected onto a single "hyper plane" perpedicula, the projection would be double sided so all vertices above and bellow that plane would be projected onto it, now that all vertices have been scaled you can then zero out that demension. once you have the vertices in this state you can then do a standard projection back to the camera. with this you are able all aswell as judge its depth within . 4d space
 
-- to illustrate this its much easier to think of a 2d case where you project 3d image onto a 1d screen then extrapolate that to 4d
-
-
+instead of dividing the each vertex by the distance from a lightsource you divide it by the distance from the camera. in order to do this you must first construct a coordinate frame of the camera in order to do this you need to in standard opengl  this is the stage that im currently on as
+the way this projection matrix would work is that first all objects would be projected onto a single "hyper plane" , the projection would be double sided so all vertices above and bellow that plane would be projected onto it, now that all vertices have been scaled you can then zero out that demension. once you have the vertices in this state you can then do a standard projection back to the camera. with this you are able all aswell as judge its depth within . 4d space
 
 
 
+- to illustrate this its much easier to think of a 2d case where you project 3d image onto a 1d screen then extrapolate that to 4d projection to a 2d screen which is our goal.
+- here is a picture of a cube viewed on a 1d screen 
+- here is a picture of a 3d projection of 
+
+- light is the inverse of a perspective projection as the camera moves closer to however to demonstrate 
+- benifit is that 
+
+
+currently im in the process of formalizing this idea mathematically. 
+
+Here is an example of how a perspective projection of a 4d cube would look like
 This is a standard cube, notice how the back most face is farther to the right than the front most face when the cube moves left due to the perspective projection
 ![ezgif com-gif-maker-1](https://user-images.githubusercontent.com/89361982/139005143-31a2f04d-13e6-4420-839f-df152ec4d74f.gif)
 
