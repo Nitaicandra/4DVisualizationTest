@@ -1,7 +1,7 @@
 # 4DVisualizationTest
 This project will discribe a new method for 4d projection
 
-|The main way to visualize 4d objects currently is through stereographic projection.| 
+|The main approach for visualizing 4d objects is stereographic projection.| 
 |---|
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/89361982/139005135-2bb1e8b6-7517-4c36-87f6-61439cf98b9a.gif)
 
