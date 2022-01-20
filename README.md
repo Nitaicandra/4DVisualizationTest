@@ -24,6 +24,6 @@ Inorder to perserve this perspective effect and also allow for 4d camera movemen
 Here is a visualization of how this projection would appear
 ![ezgif com-gif-maker-2](https://user-images.githubusercontent.com/89361982/139004896-db6e215a-4a9e-4301-8295-21a8de6d9f57.gif)
 currently im in the process of formalizing this method of projection mathematically. 
-in order to achieve the effect of scaling the coordinates based on the displacement of local camera coordinates you must first define a orthonormal coordinate frame for the camera. however unlike in 3d you cannot use a cross product to find a perpendicualr vector from the camera  so instead you have to use the gram-schmidt process. this is the step im currently on.
+
   
 
