@@ -25,6 +25,7 @@ Here is a visualization of how a tesseract would appear when moving using my met
 ![ezgif com-gif-maker-2](https://user-images.githubusercontent.com/89361982/139004896-db6e215a-4a9e-4301-8295-21a8de6d9f57.gif)
 
 currently im in the process of formalizing this model of projection mathematically. And i will update the repository with the finale formulas when finished
+*update i have finshed it i have fair degree of certinty that the math is correct i will be creating a video on it and once thats done i will update the repo wiht the code*
 
   
 
