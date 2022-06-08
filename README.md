@@ -1,6 +1,10 @@
 # 4DVisualizationTest
 This project will discribe a new method for 4d projection
 
+|Here is the new method in action.|  
+|---|
+![38VAcaciaratBlender08_06_2022](https://user-images.githubusercontent.com/89361982/172543081-dba6c985-61f2-4506-a300-879e1dc06f79.gif)
+
 |The main approach for visualizing 4d objects is through stereographic projection.|  
 |---|
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/89361982/139005135-2bb1e8b6-7517-4c36-87f6-61439cf98b9a.gif)
@@ -26,6 +30,8 @@ Here is a visualization of how a tesseract would appear when moving using my met
 
 currently im in the process of formalizing this model of projection mathematically. And i will update the repository with the finale formulas when finished
 *update i have finshed it i have fair degree of certinty that the math is correct i will be creating a video on it and once thats done i will update the repo with the code*
+
+*update you can now download the addon, put it in your blender scripts folder it should work
 
   
 
