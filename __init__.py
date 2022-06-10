@@ -36,7 +36,7 @@ def Exec():
         col.objects.link(obj)
         bpy.context.view_layer.objects.active= obj
     
-    bpy.ops.object.mode_set(mode='OBJECT')
+    #bpy.ops.object.mode_set(mode='OBJECT')
     cameraorigin = bpy.data.objects['Vert']
     projection = cameraorigin.data
     
@@ -59,7 +59,9 @@ def Exec():
     yw_rotate=bpy.context.scene.yw_rotate
     zw_rotate=bpy.context.scene.zw_rotate
     
-    #in 3d we talk about axis of rotation but in actuality we use planes of rotation it just so hapens that in 3d there are 3 ways to rotat and there are 3 axis so they happen to lighn up in 3d
+    #in 3d we talk about axis of rotation but in actuality we use planes of rotation it just so hapens that in 3d there are 3 ways to rotate
+    #and there are 3 axis so they happen to line up in 3d
+    
     # WE WANT TO ROTATE IN A COUNTER CLOCKWISE MANNER 
     #RIGHT HAND CORDINATE SYSTEM thumb is z is thumb y is index -x is middle
     #zy---
@@ -95,30 +97,31 @@ def Exec():
     for v in range(len(_4Dverts)): 
         
         x = _4Dverts[v][0]
-        y = _4Dverts[v][3]
+        w = _4Dverts[v][3]
         #x
-        _4Dverts[v][0] = round(x*math.cos((xw_rotate))- y*math.sin((xw_rotate)),16)
+        _4Dverts[v][0] = round(x*math.cos((xw_rotate))- w*math.sin((xw_rotate)),16)
         #y 
-        _4Dverts[v][3] =round(x*math.sin((xw_rotate))+ y*math.cos((xw_rotate)),16)
+        _4Dverts[v][3] =round(x*math.sin((xw_rotate))+ w*math.cos((xw_rotate)),16)
     #yw-----
     for v in range(len(_4Dverts)): 
         
-        x = _4Dverts[v][1]
-        y = _4Dverts[v][3]
+        y = _4Dverts[v][1]
+        w = _4Dverts[v][3]
         #x
-        _4Dverts[v][1] = round(x*math.cos((yw_rotate))- y*math.sin((yw_rotate)),16)
+        _4Dverts[v][1] = round(y*math.cos((yw_rotate))- w*math.sin((yw_rotate)),16)
         #y 
-        _4Dverts[v][3] =round(x*math.sin((yw_rotate))+ y*math.cos((yw_rotate)),16)
+        _4Dverts[v][3] =round(y*math.sin((yw_rotate))+ w*math.cos((yw_rotate)),16)
     #zw-----
     for v in range(len(_4Dverts)): 
         
-        x = _4Dverts[v][2]
-        y = _4Dverts[v][3]
+        z = _4Dverts[v][2]
+        w = _4Dverts[v][3]
         #x
-        _4Dverts[v][2] = round(x*math.cos((zw_rotate))- y*math.sin((zw_rotate)),16)
+        _4Dverts[v][2] = round(z*math.cos((zw_rotate))- w*math.sin((zw_rotate)),16)
         #y 
-        _4Dverts[v][3] =round(x*math.sin((zw_rotate))+ y*math.cos((zw_rotate)),16)
+        _4Dverts[v][3] =round(z*math.sin((zw_rotate))+ w*math.cos((zw_rotate)),16)
         
+    # LIGHT SOURCE METHODE OPTION 
     if bpy.context.scene.is_4dto3d == True:
         lightsource = bpy.context.scene.lightsource
         for i in range(len(_4Dverts)):
@@ -144,7 +147,6 @@ def Exec():
         _4D_origin_displacement[i] = _4D_origin_displacement[i]-_4Dcamera
         pass
     '''
-    #TO FIGURE OUT IF THERES AN ERRO JUST ROTATE A NON PROJECTED CUBE AND IF THEIR ARE ANY DISTORTIONS THEIR IS AN ERROR
     
     
     
@@ -177,7 +179,7 @@ def Exec():
     print('up_vector',up_vector) 
     print('right_vector',right_vector) 
     print('_4d_vector',_4d_vector) 
-    # THERES PROBABLY AN ERROR SOME WHER IN HERE
+    
     #!#UPVECTOR
     print()
     #Dotproduct v1 * v2  divide by v1 to get the ammount of v1 parallel to v2 we are pojecting up onto lookat 
@@ -361,6 +363,7 @@ def Exec():
         )
     for v in range(len(_4D_Vert_camera_position)):
         print(_4D_Vert_camera_position[v])
+        
     #!#RENDERING    
     bm = bmesh.new()
     bm.from_mesh(projection)
@@ -403,18 +406,7 @@ def Exec():
             #Standard
             _4Dverts_converted[i][1]/= (math.tan(fov/2))*_4Dverts_converted[i][0]
             _4Dverts_converted[i][2]/= (math.tan(fov/2))*_4Dverts_converted[i][0]
-            #ABS
-            #_4Dverts_converted[i][1]/= abs((math.tan(fov/2))*_4Dverts_converted[i][0])
-            #_4Dverts_converted[i][2]/= abs((math.tan(fov/2))*_4Dverts_converted[i][0])
-            #not useful equivlent to 90
-            #_4Dverts_converted[i][1]/= _4Dverts_converted[i][0]
-            #_4Dverts_converted[i][2]/= _4Dverts_converted[i][0]
             
-            #downwards
-            
-            #_4Dverts_converted[i][1]/= abs((math.tan(fov/2))*_4Dverts_converted[i][2]) +1
-            #_4Dverts_converted[i][2]=0
-            #_4Dverts_converted[i][1]/= (math.tan(fov/2))*_4Dverts_converted[i][0]
             
     if bpy.context.scene.proj3d:
         closebound = 500
@@ -566,7 +558,7 @@ class UI_PT_panel2(Panel):
 
     def draw(self, context):
         layout = self.layout
-        
+        # UI PROP VALUES
         layout.prop(bpy.context.scene,"fov")
         layout.prop(bpy.context.scene,"is_4dto2d")
         layout.prop(bpy.context.scene,"is_4dto3d")
