@@ -17,7 +17,7 @@ This project will discribe a new method for 4d projection
 
 |Mathematically this is achieved by first assigning an extra coordiante to each vertice (xyzw) and then definig a "light source" with an arbitrary location in 4d space. Then once you have that light source you measure the distance of each vertice from that lightsource in the w dimension and then divide the each vertice by that distance. After you do that for every vertice you can discard the w coordinates and render the cube normally. This will result in verticies that were orginally further away from the light source in the w dimension being placed closer to the orgin of the object in 3d space, which is what creates the inner cube seen in a tesseract projection|
 |---|
-however the problem with this is that although you can visualize 4d rotations of the objects, you cant visualize 4d rotations of the camera because the camera is not defined in 4d space only the light source and objects are.
+however the problem with this is that even though you can visualize 4d rotations of the tessearct, you cant visualize 4d rotations of the camera because the camera is not defined in 4d space only the light source and objects are.
 In addition to that it doesnt perserve the rules of perspective. For example here is a stereographic projection of a normal cube.
 ![OAAbalone20_01_2022](https://user-images.githubusercontent.com/89361982/150433470-b8e96a98-89b0-4b82-b9ba-3bac3284ff88.gif)
 And this is a perspective projection of that same cube, notice how when the cube moves left the back most face of the cube is farther to the right than the front most face. 
