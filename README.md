@@ -24,7 +24,9 @@ And this is a perspective projection of that same cube, notice how when the cube
 ![ezgif com-gif-maker-1](https://user-images.githubusercontent.com/89361982/139005143-31a2f04d-13e6-4420-839f-df152ec4d74f.gif)
 This is a stereographic projection of a tesseract, if it followed perspective then you would expect when the tesseract move left then the inner cube would be  displace towards the right like the normal cube
 ![ezgif com-gif-maker-4](https://user-images.githubusercontent.com/89361982/139004725-e4ff6b14-746a-4a1a-9a19-24a3060e2921.gif)
-Inorder to perserve this perspective effect and also allow for 4d camera movements ive come up with a new method of projection. Instead of simply dividing each coordinate by the distance to an arbitrary 4d point, you define a 4dimensional camera and then convert each vertice into that 4d camera's local coordinate frame. then you project those vertices back into 3d space from within those local coodinates. The key diffrence being that instead of the projection being independent of the camera like before it is a part of the camera, which then allows you to properly define 4d camera movements and perserve 4th dimensional perspective and depth
+Inorder to perserve this perspective effect and also allow for 4d camera movements ive come up with a new method of projection. 
+Instead of simply dividing each coordinate by the distance to an arbitrary 4d point, you define a 4dimensional camera using the gramschmidt methode and then transfer each vertice into that 4d camera's local coordinate frame. Then After that you can project those vertices back into 3d space from within those local coodinates. 
+The key diffrence being that instead of the projection being independent of the camera like before it is a part of the camera, which then allows you to properly define 4d camera movements and perserve 4th dimensional perspective and depth
 Here is a visualization of how a tesseract would appear when moving using my method
 ![ezgif com-gif-maker-2](https://user-images.githubusercontent.com/89361982/139004896-db6e215a-4a9e-4301-8295-21a8de6d9f57.gif)
 
