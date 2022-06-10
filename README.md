@@ -33,7 +33,10 @@ Here is a visualization of how a tesseract would appear using my method in 2d an
 Here is a visualiztion of a 4d camera looking around in the xy xz xw zw and yw planes
 ![39ZAmericanriverotterBlender10_06_2022](https://user-images.githubusercontent.com/89361982/173051075-b8c924d4-dfda-4e3e-a5fb-449022e5f395.gif)
 
-To install add to your blenderpath/3.1/scripts/addons/   
+To install drag the 4dvisualizationtest folder to your blenderpath/3.1/scripts/addons/   
+or
+go into prefrences-> addons-> install-> 4d zip file-> enter -> enable new addon called 4DSCRIPT
+
 
 
 
