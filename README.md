@@ -29,13 +29,12 @@ Instead of simply dividing each coordinate by the distance to an arbitrary 4d po
 The key diffrence being that instead of the projection being independent of the camera like before it is a part of the camera, which allows you to properly define 4d camera movements and perserve 4th dimensional perspective and depth
 Here is a visualization of how a tesseract would appear using my method in 2d and 3d
 ![39XHenBlender10_06_2022](https://user-images.githubusercontent.com/89361982/173051116-eebded22-cebe-4aba-bf1a-1e178def8380.gif)
-
 Here is a visualiztion of a 4d camera looking around in the xy xz xw zw and yw planes
 ![39ZAmericanriverotterBlender10_06_2022](https://user-images.githubusercontent.com/89361982/173051075-b8c924d4-dfda-4e3e-a5fb-449022e5f395.gif)
 
 To install drag the 4dvisualizationtest folder to your blenderpath/3.1/scripts/addons/   
-or
-go into prefrences-> addons-> install-> 4d zip file-> enter -> enable new addon called 4DSCRIPT
+
+or go into prefrences-> addons-> install-> 4d zip file-> enter -> enable new addon called 4DSCRIPT
 
 
 
