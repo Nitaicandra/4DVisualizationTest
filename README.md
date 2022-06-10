@@ -29,7 +29,8 @@ Instead of simply dividing each coordinate by the distance to an arbitrary 4d po
 The key diffrence being that instead of the projection being independent of the camera like before it is a part of the camera, which allows you to properly define 4d camera movements and perserve 4th dimensional perspective and depth
 Here is a visualization of how a tesseract would appear when moving using my method
 ![ezgif com-gif-maker-2](https://user-images.githubusercontent.com/89361982/139004896-db6e215a-4a9e-4301-8295-21a8de6d9f57.gif)
+To install add to your blenderpath/3.1/scripts/addons/   
 
 
-  
+
 
