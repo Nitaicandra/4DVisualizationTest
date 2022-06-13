@@ -9,7 +9,7 @@ This project will discribe a new method for 4d projection
 |---|
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/89361982/139005135-2bb1e8b6-7517-4c36-87f6-61439cf98b9a.gif)
 
-|You can think of this mehthode as casting a light on an object and then rendnering the shadow created from that object. This method can be generalized to 4d objects meaning that instead of taking 2d shadow of a 3d object you are taking a 3d shadow of a 4d object |
+|You can think of this methode as casting a light on an object and then rendnering the shadow created from that object. This method can be generalized to 4d objects meaning that instead of taking 2d shadow of a 3d object you are taking a 3d shadow of a 4d object |
 |---|
 
 |![image](https://user-images.githubusercontent.com/89361982/147189608-e3ef338c-004e-4880-b800-cf42340b30d8.png)|![1p8 2021_12_23_(😦)(477)](https://user-images.githubusercontent.com/89361982/147190919-2c27579d-d29b-4b72-bc1c-fedfd3015c9c.png)|
