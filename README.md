@@ -3,9 +3,7 @@ This project will discribe a new method for 4d projection
 
 |Here is the new method in action.|  
 |---|
-
-https://user-images.githubusercontent.com/89361982/185236126-2cdfa589-783e-46a0-9efd-73005acc9ce5.mov
-
+![New Text Document](https://user-images.githubusercontent.com/89361982/185237819-e2592f65-8690-4ffc-b6d9-4c8a06d8b590.gif)
 ![38VAcaciaratBlender08_06_2022](https://user-images.githubusercontent.com/89361982/172543081-dba6c985-61f2-4506-a300-879e1dc06f79.gif)
 
 |The main approach for visualizing 4d objects is through a lightsource projection.|  
